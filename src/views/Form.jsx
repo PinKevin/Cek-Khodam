@@ -22,7 +22,7 @@ function Form() {
       return;
     }
 
-    const data = { name: name };
+    const data = { name: name.trim() };
     navigate(`/result`, { state: data });
   };
 
